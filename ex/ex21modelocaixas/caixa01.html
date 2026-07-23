@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level
+            display: inline; (para inverter)*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px; /*largura da borda*/
+            border-style: solid; /**/
+            border-color: darkgray; /**/
+          /*  border: 10px solid darkgray; SIMPLIFICANDO*/ 
+
+            padding-top: 10px; /*espaço entre borda e letra */
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+           /* padding: 10px 10px 10px 10px; SIMPLIFICANDO
+           se todas medidas forem iguais posso colocar apenas um valor*/ 
+
+
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 50px;
+            margin-left: auto;
+            /* margin: 10px auto 50px auto; SIMPLIFICANDO
+           se todas medidas forem iguais posso colocar apenas um valor*/ 
+            /*margin: auto; para margem ficar centralizada*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(15, 18, 184); 
+            /*entre a borda e a margem*/
+            /*  outline: 5px dashed rgb(15, 18, 184); SIMPLIFICANDO*/ 
+        }
+        a { /*inline-level*/  
+            /*display: block; (para inverter)*/
+            border-width: 10px;
+            border-style: groove;
+            border-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    /*quebra linhas*/
+    <h1>Exemplo de caixas box-level</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui, eveniet in pariatur reprehenderit officia perspiciatis! Vero cumque, <a href="#"> links tambem são box-level </a> nam qui doloribus molestias incidunt magnam nemo similique optio, doloremque iure delectus!</p>
+    
+</body>
+</html>
