@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    min-height: 150px;
+    text-align: center;   
+}
+
+h1 {
+    padding-top: 40px;
+    margin-bottom: 0px;
+    font-size: 10vw;
+    font-family: var(--fonte1);
+    
+}
+
+header p {
+    font-size: 1.5em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-family: var(--fonte1);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+main pre {
+    padding: 200px 0px;
+    font-size: 2em;
+    font-family: var(--fonte2);
+    font-weight: bold;
+    text-align: justify;
+    line-height: 2em;
+}
+
+
+
+#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: white;
+}
+
+#img2 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 2px 2px;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
