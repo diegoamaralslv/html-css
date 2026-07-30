@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
 
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,6 +17,9 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+}
 
 header {
     background-color: black;
@@ -21,10 +29,12 @@ header {
 }
 
 h1 {
-    padding-top: 40px;
+    padding-top: 50px;
+  /*text-transform: uppercase; letras maiusculas*/
+    font-variant: small-caps; /*letras maiusculas diferente*/
     margin-bottom: 0px;
     font-size: 10vw;
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
     
 }
 
@@ -34,7 +44,7 @@ header p {
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-family: var(--fonte1);
 }
 
@@ -47,47 +57,65 @@ header a:hover {
     text-decoration: underline;
 }
 
-main pre {
-    padding: 200px 0px;
-    font-size: 2em;
-    font-family: var(--fonte2);
-    font-weight: bold;
+main section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 50px;
+    font-size: 3.5vw;
+    font-family: var(--fonte3);
     text-align: justify;
     line-height: 2em;
 }
 
-
-
-#img1 {
-    background-image: url('../imagens/background001.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed;
+.img {
+    background-color: rgba(0, 0, 0, 0.082);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
 }
 
-#img2 {
-    background-image: url('../imagens/background002.jpg');
-    background-position: top center;
+.img > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(7, 7, 7, 0.473);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;
-    color: white;
+    
+    
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+    font-family: var(--fonte1);
+    font-size: 2em;
 }
 
 footer a {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    padding: 2px 2px;
+    
 }
 
 footer a:hover {
